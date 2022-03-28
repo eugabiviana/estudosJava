@@ -5,7 +5,7 @@ package academy.devdojo.maratonajava.introducao;
  * Esse tipo de comentário serve para documentar libs. É editado com estilo html e fica antes do nome da classe!
  * A formatação é feita pelo lápis na barra lateral esquerda.
  */
-public class OlaDevDojo {
+public class Aula01OlaDevDojo {
     public static void main(String[] args){
         System.out.println("KA-ME-HA-ME-HA");
     }

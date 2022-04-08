@@ -1,7 +1,8 @@
 package academy.devdojo.maratonajava.introducao;
 
 /**
- * Exercício: crie uma calculadora, com dados estáticos, que realize as 4 operações básicas da matemática: subtração, adição, divisão e multiplicação e imprima os resultados no console da IDE
+ * Exercício: crie uma calculadora, com dados estáticos, que realize as 4 operações básicas da matemática:
+ * subtração, adição, divisão e multiplicação e imprima os resultados no console da IDE.
  */
 public class Aula04OperadoresExercicioCalculadora {
     public static void main(String[] args) {

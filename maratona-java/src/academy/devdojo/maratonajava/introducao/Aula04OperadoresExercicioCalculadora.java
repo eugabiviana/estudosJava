@@ -6,6 +6,7 @@ package academy.devdojo.maratonajava.introducao;
  */
 public class Aula04OperadoresExercicioCalculadora {
     public static void main(String[] args) {
+
         double num1 = 20;
         double num2 = 35;
         double soma = num1 + num2;

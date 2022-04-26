@@ -23,10 +23,6 @@ public class Aula08ArraysMultidimensionaisExercícioArrayRandom {
                     System.out.print(" | ");
                 }
             }
-            
         }
-        
-
-
     }
 }

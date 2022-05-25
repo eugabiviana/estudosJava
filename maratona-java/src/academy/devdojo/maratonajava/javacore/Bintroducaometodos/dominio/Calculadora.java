@@ -8,4 +8,9 @@ public class Calculadora {
     public void subtraiDoisNumeros(){
         System.out.println(21 - 2);
     }
+
+    public void multiplicaDoisNumeros(int num1, float num2){
+        System.out.println(num1 * num2);
+    }
 }
+//Posso colocar dois tipos de números diferentes no parâmetro, desde que isso esteja especificado na criação do método.

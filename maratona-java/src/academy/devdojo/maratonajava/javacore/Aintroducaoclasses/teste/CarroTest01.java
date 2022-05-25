@@ -18,5 +18,10 @@ public class CarroTest01 {
 
         System.out.println("Carro 1: " + carro.nome + "; Modelo: " + carro.modelo + "; Ano: " + carro.ano + ".");
         System.out.println("Carro 2: " + carro2.nome + "; Modelo: " + carro2.modelo + "; Ano: " + carro2.ano + ".");
+
+        carro = carro2;
+        System.out.println("\nUsando a referência 'carro = carro2;' :");
+        System.out.println("Carro 1: " + carro.nome + "; Modelo: " + carro.modelo + "; Ano: " + carro.ano + ".");
+        System.out.println("Carro 2: " + carro2.nome + "; Modelo: " + carro2.modelo + "; Ano: " + carro2.ano + ".");
     }
 }

@@ -1,6 +1,7 @@
 package com.example.springboot.models;
 
 import jakarta.persistence.*;
+import org.springframework.hateoas.RepresentationModel;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -8,7 +9,7 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "TB_PRODUCTS")
-public class ProductModel implements Serializable {
+public class ProductModel extends RepresentationModel<ProductModel> implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -47,5 +48,5 @@ public class ProductModel implements Serializable {
 Essa interface mostra para o Java que essa classe está habilitada a passar por serializações.
 - UUID: são marcadores que geram valores únicos, o que evita que sejam criados valores semelhantes, o que poderia
 acontecer, caso fosse criado um valor sequencial.
-
+- RepresentationModel<ProductModel>: é sobre a criação do Hateoas.
  */

@@ -11,15 +11,6 @@ public class PersonDTO {
     @NotNull
     private Date birth;
 
-    public PersonDTO() {
-
-    }
-
-    public PersonDTO(@NotNull String name, @NotNull Date birth) {
-        this.name = name;
-        this.birth = birth;
-    }
-
     public String getName() {
         return name;
     }

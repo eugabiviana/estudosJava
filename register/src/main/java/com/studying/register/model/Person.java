@@ -20,13 +20,24 @@ public class Person {
     @NotNull
     private Date birth;
 
-
     public UUID getId() {
         return id;
     }
 
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Date getBirth() {
+        return birth;
     }
 
     public void setBirth(Date birth) {
@@ -34,10 +45,7 @@ public class Person {
     }
 
     public Person() {
-
-    }
-    public Person(UUID id) {
-        this.id = UUID.randomUUID();
+        this.setId(UUID.randomUUID());
     }
 
     @Override

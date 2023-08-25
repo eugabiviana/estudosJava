@@ -10,6 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -43,4 +44,20 @@ public class PersonController {
         return ResponseEntity.ok(person);
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity update (@PathVariable UUID id, @RequestBody PersonDTO updatedPerson){
+        Optional<Person> personToUpdate = repository.findById(id);
+        var person = personToUpdate.get();
+        BeanUtils.copyProperties(updatedPerson, person);
+
+        return ResponseEntity.status(HttpStatus.OK).body(repository.save(person));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity delete (@PathVariable UUID id){
+        Optional<Person> person = repository.findById(id);
+        repository.delete(person.get());
+
+        return ResponseEntity.ok("The person was successfully deletes!");
+    }
 }

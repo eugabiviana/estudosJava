@@ -26,4 +26,5 @@ public class PersonDTO {
     public void setBirth(Date birth) {
         this.birth = birth;
     }
+
 }
